@@ -1,0 +1,1362 @@
+cscope 15 $HOME/linux-kernel-labs/modules/nfsroot/root/hello               0000008370
+	@hello_version.c
+
+1 
+	~<löux/öô.h
+>
+
+2 
+	~<löux/moduÀ.h
+>
+
+3 
+	~<löux/i2c.h
+>
+
+4 
+	~<löux/ut¢ame.h
+>
+
+5 
+	~<löux/time.h
+>
+
+6 
+	~<löux/¥oc_fs.h
+>
+
+10 *
+	gwhom
+ = "Skanda";
+
+11 
+moduÀ_∑øm
+(
+whom
+, 
+ch¨p
+, 0);
+
+13 
+timevÆ
+ 
+	göô_tv
+;
+
+15 
+	$hñlo_ñ≠£d_time
+()
+
+17 
+timevÆ
+ 
+cuºít_tv
+;
+
+18 
+	`do_gëtimeofday
+(&
+cuºít_tv
+);
+
+19  (()
+cuºít_tv
+.
+tv_£c
+Ë- ((Ë
+öô_tv
+.tv_sec);
+
+20 
+	}
+}
+
+30 
+__öô
+ 
+	$hñlo_öô
+()
+
+32 
+	`¥ötk
+(
+KERN_
+ "Hñlÿ%s. Youáª cuºíéy usög Löux %s\n", 
+whom
+, 
+	`ut¢ame
+()->
+vîsi⁄
+);
+
+33 
+	`do_gëtimeofday
+(&
+öô_tv
+);
+
+40 
+	}
+}
+
+42 
+__exô
+ 
+	$hñlo_exô
+()
+
+45 
+	`¥ötk
+(
+KERN_
+ "Goodbye. Thi†moduÀÜived %d sec⁄ds\n", 
+	`hñlo_ñ≠£d_time
+());
+
+46 
+	}
+}
+
+48 
+moduÀ_öô
+(
+hñlo_öô
+);
+
+49 
+moduÀ_exô
+(
+hñlo_exô
+);
+
+51 
+MODULE_LICENSE
+("GPL");
+
+52 
+MODULE_DESCRIPTION
+("Greeting Module");
+
+53 
+MODULE_AUTHOR
+("Skanda Guruanand");
+
+	@hello_version.mod.c
+
+1 
+	~<löux/moduÀ.h
+>
+
+2 
+	~<löux/vîmagic.h
+>
+
+3 
+	~<löux/compûî.h
+>
+
+5 
+MODULE_INFO
+(
+vîmagic
+, 
+VERMAGIC_STRING
+);
+
+7 
+__visibÀ
+ 
+moduÀ
+ 
+__this_moduÀ
+
+
+8 
+__©åibuã__
+((
+£˘i⁄
+(".gnu.linkonce.this_module"))) = {
+
+9 .
+«me
+ = 
+KBUILD_MODNAME
+,
+
+10 .
+	göô
+ = 
+öô_moduÀ
+,
+
+11 #ifde‡
+CONFIG_MODULE_UNLOAD
+
+
+12 .
+	gexô
+ = 
+˛ónup_moduÀ
+,
+
+14 .
+	g¨ch
+ = 
+MODULE_ARCH_INIT
+,
+
+17 c⁄° 
+modvîsi⁄_öfo
+ 
+	g____vîsi⁄s
+[]
+
+18 
+__u£d
+
+
+19 
+__©åibuã__
+((
+£˘i⁄
+("__versions"))) = {
+
+20 { 0x260f334e, 
+__VMLINUX_SYMBOL_STR
+(
+moduÀ_œyout
+) },
+
+21 { 0x5d41c87c, 
+__VMLINUX_SYMBOL_STR
+(
+∑øm_›s_ch¨p
+) },
+
+22 { 0xefd6cf06, 
+__VMLINUX_SYMBOL_STR
+(
+__´abi_unwöd_˝p_¥0
+) },
+
+23 { 0x2e5810c6, 
+__VMLINUX_SYMBOL_STR
+(
+__´abi_unwöd_˝p_¥1
+) },
+
+24 { 0x4f68e5c9, 
+__VMLINUX_SYMBOL_STR
+(
+do_gëtimeofday
+) },
+
+25 { 0x27e1a049, 
+__VMLINUX_SYMBOL_STR
+(
+¥ötk
+) },
+
+28 c⁄° 
+	g__moduÀ_dïíds
+[]
+
+29 
+__u£d
+
+
+30 
+__©åibuã__
+((
+£˘i⁄
+(".modinfo"))) =
+
+34 
+MODULE_INFO
+(
+§cvîsi⁄
+, "5E08868D65CD8EB72FFF402");
+
+	@/usr/include/linux/i2c.h
+
+26 #i‚de‡
+_LINUX_I2C_H
+
+
+27 
+	#_LINUX_I2C_H
+
+
+	)
+
+29 
+	~<löux/ty≥s.h
+>
+
+67 
+	si2c_msg
+ {
+
+68 
+__u16
+ 
+	maddr
+;
+
+69 
+__u16
+ 
+	mÊags
+;
+
+70 
+	#I2C_M_TEN
+ 0x0010
+
+	)
+
+71 
+	#I2C_M_RD
+ 0x0001
+
+	)
+
+72 
+	#I2C_M_NOSTART
+ 0x4000
+
+	)
+
+73 
+	#I2C_M_REV_DIR_ADDR
+ 0x2000
+
+	)
+
+74 
+	#I2C_M_IGNORE_NAK
+ 0x1000
+
+	)
+
+75 
+	#I2C_M_NO_RD_ACK
+ 0x0800
+
+	)
+
+76 
+	#I2C_M_RECV_LEN
+ 0x0400
+
+	)
+
+77 
+__u16
+ 
+	mÀn
+;
+
+78 
+__u8
+ *
+	mbuf
+;
+
+83 
+	#I2C_FUNC_I2C
+ 0x00000001
+
+	)
+
+84 
+	#I2C_FUNC_10BIT_ADDR
+ 0x00000002
+
+	)
+
+85 
+	#I2C_FUNC_PROTOCOL_MANGLING
+ 0x00000004
+
+	)
+
+86 
+	#I2C_FUNC_SMBUS_PEC
+ 0x00000008
+
+	)
+
+87 
+	#I2C_FUNC_SMBUS_BLOCK_PROC_CALL
+ 0x00008000
+
+	)
+
+88 
+	#I2C_FUNC_SMBUS_QUICK
+ 0x00010000
+
+	)
+
+89 
+	#I2C_FUNC_SMBUS_READ_BYTE
+ 0x00020000
+
+	)
+
+90 
+	#I2C_FUNC_SMBUS_WRITE_BYTE
+ 0x00040000
+
+	)
+
+91 
+	#I2C_FUNC_SMBUS_READ_BYTE_DATA
+ 0x00080000
+
+	)
+
+92 
+	#I2C_FUNC_SMBUS_WRITE_BYTE_DATA
+ 0x00100000
+
+	)
+
+93 
+	#I2C_FUNC_SMBUS_READ_WORD_DATA
+ 0x00200000
+
+	)
+
+94 
+	#I2C_FUNC_SMBUS_WRITE_WORD_DATA
+ 0x00400000
+
+	)
+
+95 
+	#I2C_FUNC_SMBUS_PROC_CALL
+ 0x00800000
+
+	)
+
+96 
+	#I2C_FUNC_SMBUS_READ_BLOCK_DATA
+ 0x01000000
+
+	)
+
+97 
+	#I2C_FUNC_SMBUS_WRITE_BLOCK_DATA
+ 0x02000000
+
+	)
+
+98 
+	#I2C_FUNC_SMBUS_READ_I2C_BLOCK
+ 0x04000000
+
+	)
+
+99 
+	#I2C_FUNC_SMBUS_WRITE_I2C_BLOCK
+ 0x08000000
+
+	)
+
+101 
+	#I2C_FUNC_SMBUS_BYTE
+ (
+I2C_FUNC_SMBUS_READ_BYTE
+ | \
+
+102 
+I2C_FUNC_SMBUS_WRITE_BYTE
+)
+
+	)
+
+103 
+	#I2C_FUNC_SMBUS_BYTE_DATA
+ (
+I2C_FUNC_SMBUS_READ_BYTE_DATA
+ | \
+
+104 
+I2C_FUNC_SMBUS_WRITE_BYTE_DATA
+)
+
+	)
+
+105 
+	#I2C_FUNC_SMBUS_WORD_DATA
+ (
+I2C_FUNC_SMBUS_READ_WORD_DATA
+ | \
+
+106 
+I2C_FUNC_SMBUS_WRITE_WORD_DATA
+)
+
+	)
+
+107 
+	#I2C_FUNC_SMBUS_BLOCK_DATA
+ (
+I2C_FUNC_SMBUS_READ_BLOCK_DATA
+ | \
+
+108 
+I2C_FUNC_SMBUS_WRITE_BLOCK_DATA
+)
+
+	)
+
+109 
+	#I2C_FUNC_SMBUS_I2C_BLOCK
+ (
+I2C_FUNC_SMBUS_READ_I2C_BLOCK
+ | \
+
+110 
+I2C_FUNC_SMBUS_WRITE_I2C_BLOCK
+)
+
+	)
+
+112 
+	#I2C_FUNC_SMBUS_EMUL
+ (
+I2C_FUNC_SMBUS_QUICK
+ | \
+
+113 
+I2C_FUNC_SMBUS_BYTE
+ | \
+
+114 
+I2C_FUNC_SMBUS_BYTE_DATA
+ | \
+
+115 
+I2C_FUNC_SMBUS_WORD_DATA
+ | \
+
+116 
+I2C_FUNC_SMBUS_PROC_CALL
+ | \
+
+117 
+I2C_FUNC_SMBUS_WRITE_BLOCK_DATA
+ | \
+
+118 
+I2C_FUNC_SMBUS_I2C_BLOCK
+ | \
+
+119 
+I2C_FUNC_SMBUS_PEC
+)
+
+	)
+
+124 
+	#I2C_SMBUS_BLOCK_MAX
+ 32
+
+	)
+
+125 
+	ui2c_smbus_d©a
+ {
+
+126 
+__u8
+ 
+	mbyã
+;
+
+127 
+__u16
+ 
+	mw‹d
+;
+
+128 
+__u8
+ 
+	mblock
+[
+I2C_SMBUS_BLOCK_MAX
+ + 2];
+
+133 
+	#I2C_SMBUS_READ
+ 1
+
+	)
+
+134 
+	#I2C_SMBUS_WRITE
+ 0
+
+	)
+
+138 
+	#I2C_SMBUS_QUICK
+ 0
+
+	)
+
+139 
+	#I2C_SMBUS_BYTE
+ 1
+
+	)
+
+140 
+	#I2C_SMBUS_BYTE_DATA
+ 2
+
+	)
+
+141 
+	#I2C_SMBUS_WORD_DATA
+ 3
+
+	)
+
+142 
+	#I2C_SMBUS_PROC_CALL
+ 4
+
+	)
+
+143 
+	#I2C_SMBUS_BLOCK_DATA
+ 5
+
+	)
+
+144 
+	#I2C_SMBUS_I2C_BLOCK_BROKEN
+ 6
+
+	)
+
+145 
+	#I2C_SMBUS_BLOCK_PROC_CALL
+ 7
+
+	)
+
+146 
+	#I2C_SMBUS_I2C_BLOCK_DATA
+ 8
+
+	)
+
+	@/usr/include/linux/time.h
+
+1 #i‚de‡
+_LINUX_TIME_H
+
+
+2 
+	#_LINUX_TIME_H
+
+
+	)
+
+4 
+	~<löux/ty≥s.h
+>
+
+7 #i‚de‡
+_STRUCT_TIMESPEC
+
+
+8 
+	#_STRUCT_TIMESPEC
+
+
+	)
+
+9 
+	stime•ec
+ {
+
+10 
+__kî√l_time_t
+ 
+	mtv_£c
+;
+
+11 
+	mtv_n£c
+;
+
+15 
+	stimevÆ
+ {
+
+16 
+__kî√l_time_t
+ 
+	mtv_£c
+;
+
+17 
+__kî√l_su£c⁄ds_t
+ 
+	mtv_u£c
+;
+
+20 
+	stimez⁄e
+ {
+
+21 
+	mtz_möuãswe°
+;
+
+22 
+	mtz_d°time
+;
+
+26 
+	#NFDBITS
+ 
+__NFDBITS
+
+
+	)
+
+28 
+	#FD_SETSIZE
+ 
+__FD_SETSIZE
+
+
+	)
+
+29 
+	#FD_SET
+(
+fd
+,
+fd£ç
+Ë
+	`__FD_SET
+(fd,fd£ç)
+
+	)
+
+30 
+	#FD_CLR
+(
+fd
+,
+fd£ç
+Ë
+	`__FD_CLR
+(fd,fd£ç)
+
+	)
+
+31 
+	#FD_ISSET
+(
+fd
+,
+fd£ç
+Ë
+	`__FD_ISSET
+(fd,fd£ç)
+
+	)
+
+32 
+	#FD_ZERO
+(
+fd£ç
+Ë
+	`__FD_ZERO
+(fd£ç)
+
+	)
+
+38 
+	#ITIMER_REAL
+ 0
+
+	)
+
+39 
+	#ITIMER_VIRTUAL
+ 1
+
+	)
+
+40 
+	#ITIMER_PROF
+ 2
+
+	)
+
+42 
+	sôimî•ec
+ {
+
+43 
+time•ec
+ 
+	mô_öãrvÆ
+;
+
+44 
+time•ec
+ 
+	mô_vÆue
+;
+
+47 
+	sôimîvÆ
+ {
+
+48 
+timevÆ
+ 
+	mô_öãrvÆ
+;
+
+49 
+timevÆ
+ 
+	mô_vÆue
+;
+
+55 
+	#CLOCK_REALTIME
+ 0
+
+	)
+
+56 
+	#CLOCK_MONOTONIC
+ 1
+
+	)
+
+57 
+	#CLOCK_PROCESS_CPUTIME_ID
+ 2
+
+	)
+
+58 
+	#CLOCK_THREAD_CPUTIME_ID
+ 3
+
+	)
+
+59 
+	#CLOCK_MONOTONIC_RAW
+ 4
+
+	)
+
+60 
+	#CLOCK_REALTIME_COARSE
+ 5
+
+	)
+
+61 
+	#CLOCK_MONOTONIC_COARSE
+ 6
+
+	)
+
+62 
+	#CLOCK_BOOTTIME
+ 7
+
+	)
+
+63 
+	#CLOCK_REALTIME_ALARM
+ 8
+
+	)
+
+64 
+	#CLOCK_BOOTTIME_ALARM
+ 9
+
+	)
+
+69 
+	#CLOCK_SGI_CYCLE
+ 10
+
+	)
+
+70 
+	#MAX_CLOCKS
+ 16
+
+	)
+
+71 
+	#CLOCKS_MASK
+ (
+CLOCK_REALTIME
+ | 
+CLOCK_MONOTONIC
+)
+
+	)
+
+72 
+	#CLOCKS_MONO
+ 
+CLOCK_MONOTONIC
+
+
+	)
+
+77 
+	#TIMER_ABSTIME
+ 0x01
+
+	)
+
+	@/usr/include/linux/utsname.h
+
+1 #i‚de‡
+_LINUX_UTSNAME_H
+
+
+2 
+	#_LINUX_UTSNAME_H
+
+
+	)
+
+4 
+	#__OLD_UTS_LEN
+ 8
+
+	)
+
+6 
+	sﬁdﬁd_ut¢ame
+ {
+
+7 
+	msy¢ame
+[9];
+
+8 
+	mnodíame
+[9];
+
+9 
+	mªÀa£
+[9];
+
+10 
+	mvîsi⁄
+[9];
+
+11 
+	mmachöe
+[9];
+
+14 
+	#__NEW_UTS_LEN
+ 64
+
+	)
+
+16 
+	sﬁd_ut¢ame
+ {
+
+17 
+	msy¢ame
+[65];
+
+18 
+	mnodíame
+[65];
+
+19 
+	mªÀa£
+[65];
+
+20 
+	mvîsi⁄
+[65];
+
+21 
+	mmachöe
+[65];
+
+24 
+	s√w_ut¢ame
+ {
+
+25 
+	msy¢ame
+[
+__NEW_UTS_LEN
+ + 1];
+
+26 
+	mnodíame
+[
+__NEW_UTS_LEN
+ + 1];
+
+27 
+	mªÀa£
+[
+__NEW_UTS_LEN
+ + 1];
+
+28 
+	mvîsi⁄
+[
+__NEW_UTS_LEN
+ + 1];
+
+29 
+	mmachöe
+[
+__NEW_UTS_LEN
+ + 1];
+
+30 
+	mdomaö«me
+[
+__NEW_UTS_LEN
+ + 1];
+
+	@/usr/include/linux/types.h
+
+1 #i‚de‡
+_LINUX_TYPES_H
+
+
+2 
+	#_LINUX_TYPES_H
+
+
+	)
+
+4 
+	~<asm/ty≥s.h
+>
+
+6 #i‚de‡
+__ASSEMBLY__
+
+
+8 
+	~<löux/posix_ty≥s.h
+>
+
+16 #ifde‡
+__CHECKER__
+
+
+17 
+	#__bôwi£__
+ 
+	`__©åibuã__
+((
+bôwi£
+))
+
+	)
+
+19 
+	#__bôwi£__
+
+
+	)
+
+21 #ifde‡
+__CHECK_ENDIAN__
+
+
+22 
+	#__bôwi£
+ 
+__bôwi£__
+
+
+	)
+
+24 
+	#__bôwi£
+
+
+	)
+
+27 
+__u16
+ 
+	t__bôwi£
+ 
+	t__À16
+;
+
+28 
+__u16
+ 
+	t__bôwi£
+ 
+	t__be16
+;
+
+29 
+__u32
+ 
+	t__bôwi£
+ 
+	t__À32
+;
+
+30 
+__u32
+ 
+	t__bôwi£
+ 
+	t__be32
+;
+
+31 
+__u64
+ 
+	t__bôwi£
+ 
+	t__À64
+;
+
+32 
+__u64
+ 
+	t__bôwi£
+ 
+	t__be64
+;
+
+34 
+__u16
+ 
+	t__bôwi£
+ 
+	t__sum16
+;
+
+35 
+__u32
+ 
+	t__bôwi£
+ 
+	t__wsum
+;
+
+46 
+	#__Æig√d_u64
+ 
+__u64
+ 
+	`__©åibuã__
+((
+	`Æig√d
+(8)))
+
+	)
+
+47 
+	#__Æig√d_be64
+ 
+__be64
+ 
+	`__©åibuã__
+((
+	`Æig√d
+(8)))
+
+	)
+
+48 
+	#__Æig√d_À64
+ 
+__À64
+ 
+	`__©åibuã__
+((
+	`Æig√d
+(8)))
+
+	)
+
+	@/usr/include/linux/posix_types.h
+
+1 #i‚de‡
+_LINUX_POSIX_TYPES_H
+
+
+2 
+	#_LINUX_POSIX_TYPES_H
+
+
+	)
+
+4 
+	~<löux/°ddef.h
+>
+
+21 #unde‡
+__NFDBITS
+
+
+22 
+	#__NFDBITS
+ (8 * ())
+
+	)
+
+24 #unde‡
+__FD_SETSIZE
+
+
+25 
+	#__FD_SETSIZE
+ 1024
+
+	)
+
+27 #unde‡
+__FDSET_LONGS
+
+
+28 
+	#__FDSET_LONGS
+ (
+__FD_SETSIZE
+/
+__NFDBITS
+)
+
+	)
+
+30 #unde‡
+__FDELT
+
+
+31 
+	#__FDELT
+(
+d
+Ë((dË/ 
+__NFDBITS
+)
+
+	)
+
+33 #unde‡
+__FDMASK
+
+
+34 
+	#__FDMASK
+(
+d
+Ë(1UL << ((dË% 
+__NFDBITS
+))
+
+	)
+
+37 
+	mfds_bôs
+ [
+__FDSET_LONGS
+];
+
+38 } 
+	t__kî√l_fd_£t
+;
+
+41 (*
+	t__kî√l_sigh™dÀr_t
+)();
+
+44 
+	t__kî√l_key_t
+;
+
+45 
+	t__kî√l_mqd_t
+;
+
+47 
+	~<asm/posix_ty≥s.h
+>
+
+	@/usr/include/linux/stddef.h
+
+1 #i‚de‡
+_LINUX_STDDEF_H
+
+
+2 
+	#_LINUX_STDDEF_H
+
+
+	)
+
+6 #unde‡
+NULL
+
+
+7 #i‡
+deföed
+(
+__˝lu•lus
+)
+
+8 
+	#NULL
+ 0
+
+	)
+
+10 
+	#NULL
+ ((*)0)
+
+	)
+
+	@
+1
+.
+1
+/usr/include
+8
+204
+hello_version.c
+hello_version.mod.c
+/usr/include/linux/i2c.h
+/usr/include/linux/time.h
+/usr/include/linux/utsname.h
+/usr/include/linux/types.h
+/usr/include/linux/posix_types.h
+/usr/include/linux/stddef.h
